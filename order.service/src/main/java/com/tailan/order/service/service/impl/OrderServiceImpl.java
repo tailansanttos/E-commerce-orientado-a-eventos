@@ -80,6 +80,6 @@ public class OrderServiceImpl implements OrderService {
     public void updatePaymentStatus(UUID orderId, String status) {
         Order order = orderRepository.findById(orderId).orElseThrow(() -> new OrderNotFoundException("Pedido não encontrado."));
         order.setPaymentStatus(status);
-        Order savedOrder = orderRepository.save(order);
+        orderRepository.save(order);
     }
 }

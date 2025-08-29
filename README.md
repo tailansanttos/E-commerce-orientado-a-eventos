@@ -1,0 +1,1 @@
+Dois projetos com Spring Boot e Kafka, sendo um Produtor, que envia uma mensagem em formato json a um tópico através de uma API REST e o outro, um Consumidor, que fica 'ouvindo' este tópico e retornando se o pagamento foi aprovado ou não.
